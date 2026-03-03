@@ -5,7 +5,9 @@ import { createAddonStore } from './externals/addonStore'
 import extraScopePlugin from 'stylis-plugin-extra-scope'
 
 const scope = '#cockpit-for-pixiv'
-const stylisPlugins = [extraScopePlugin(scope)]
+const plugin = extraScopePlugin(scope)
+Object.defineProperty(plugin, 'name', { value: 'extra-scope-plugin' })
+const stylisPlugins = [plugin]
 const addonStore = createAddonStore()
 const container = document.createElement('div')
 container.id = scope.slice(1)
