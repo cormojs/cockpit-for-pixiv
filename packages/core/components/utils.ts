@@ -52,7 +52,7 @@ export type ComponentSet<
  */
 export const themeRef = <T extends ThemeKeys>(tx: T) => (
   props: StyledProps<VariantProps<T>>
-) => css({ variant: tx + '.' + props.variant })(props)
+) => css({ variant: `${String(tx)}.${String(props.variant)}` })(props)
 
 /**
  * Extends the styled component will able to use `sx` prop.
