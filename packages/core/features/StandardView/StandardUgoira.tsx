@@ -110,10 +110,8 @@ const PlayControl = styled.div(
   })
 )
 
-if (__DEV__) {
-  Loader.displayName = 'StandardUgoira.Loader'
-  Success.displayName = 'StandardUgoira.Success'
-  Layout.displayName = 'StandardUgoira.Layout'
-  Canvas.displayName = 'StandardUgoira.Canvas'
-  PlayControl.displayName = 'StandardUgoira.PlayControl'
-}
+Loader.displayName = 'StandardUgoira.Loader'
+Success.displayName = 'StandardUgoira.Success'
+Layout.displayName = 'StandardUgoira.Layout'
+Canvas.displayName = 'StandardUgoira.Canvas'
+PlayControl.displayName = 'StandardUgoira.PlayControl'

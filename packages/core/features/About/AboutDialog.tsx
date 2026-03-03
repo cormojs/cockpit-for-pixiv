@@ -154,10 +154,8 @@ const Kbd = styled.kbd(
   })
 )
 
-if (__DEV__) {
-  AboutDialog.displayName = 'AboutDialog'
-  LinkItem.dispalyName = 'AboutDialog.LinkItem'
-  KeyItem.displayName = 'AboutDialog.KeyItem'
-  Subheader.displayName = 'AboutDialog.Subheader'
-  Kbd.displayName = 'AboutDialog.Kbd'
-}
+AboutDialog.displayName = 'AboutDialog'
+LinkItem.displayName = 'AboutDialog.LinkItem'
+KeyItem.displayName = 'AboutDialog.KeyItem'
+Subheader.displayName = 'AboutDialog.Subheader'
+Kbd.displayName = 'AboutDialog.Kbd'

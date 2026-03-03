@@ -68,7 +68,5 @@ export const IconButton: IconButtonType = styled.button<IconButtonProps>(
 const Link = IconButton.withComponent('a')
 IconButton.Link = Link
 
-if (__DEV__) {
-  IconButton.displayName = 'IconButton'
-  Link.displayName = 'IconButton.Link'
-}
+IconButton.displayName = 'IconButton'
+Link.displayName = 'IconButton.Link'

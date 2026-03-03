@@ -120,10 +120,8 @@ const Thumb = styled.span(
   })
 )
 
-if (__DEV__) {
-  Switch.displayName = 'Switch'
-  Root.displayName = 'Switch.Root'
-  Checkbox.displayName = 'Switch.Checkbox'
-  Track.displayName = 'Switch.Track'
-  Thumb.displayName = 'Switch.Thumb'
-}
+Switch.displayName = 'Switch'
+Root.displayName = 'Switch.Root'
+Checkbox.displayName = 'Switch.Checkbox'
+Track.displayName = 'Switch.Track'
+Thumb.displayName = 'Switch.Thumb'

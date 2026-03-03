@@ -160,12 +160,10 @@ const formatDate = (dateString: string) =>
     minute: '2-digit'
   })
 
-if (__DEV__) {
-  Loader.displayName = 'Description.Loader'
-  Success.displayName = 'Description.Success'
-  TagList.displayName = 'Description.TagList'
-  TagListRoot.displayName = 'Description.TagListRoot'
-  TagLink.displayName = 'Description.TagLink'
-  Series.displayName = 'Description.Series'
-  ListItem.displayName = 'Description.ListItem'
-}
+Loader.displayName = 'Description.Loader'
+Success.displayName = 'Description.Success'
+TagList.displayName = 'Description.TagList'
+TagListRoot.displayName = 'Description.TagListRoot'
+TagLink.displayName = 'Description.TagLink'
+Series.displayName = 'Description.Series'
+ListItem.displayName = 'Description.ListItem'

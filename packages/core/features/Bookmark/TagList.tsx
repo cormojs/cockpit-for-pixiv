@@ -189,12 +189,10 @@ const toggleTag = (list: string[], tag: string) => {
   return [...set].join(' ')
 }
 
-if (__DEV__) {
-  IllustTagList.displayName = 'TagList.IllustTagList'
-  UserTagList.displayName = 'TagList.UserTagList'
-  Subheader.displayName = 'TagList.Subheader'
-  List.displayName = 'TagList.List'
-  Tag.displayName = 'TagList.Tag'
-  ColumnButton.displayName = 'TagList.ColumnButton'
-  DirectionButton.displayName = 'TagList.DirectionButton'
-}
+IllustTagList.displayName = 'TagList.IllustTagList'
+UserTagList.displayName = 'TagList.UserTagList'
+Subheader.displayName = 'TagList.Subheader'
+List.displayName = 'TagList.List'
+Tag.displayName = 'TagList.Tag'
+ColumnButton.displayName = 'TagList.ColumnButton'
+DirectionButton.displayName = 'TagList.DirectionButton'

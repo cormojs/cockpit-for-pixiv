@@ -27,6 +27,4 @@ export const useLazyLoad = () => {
   return [inView, setRef] as const
 }
 
-if (__DEV__) {
-  LazyLoadingObserver.displayName = 'LazyLoadingObserver'
-}
+LazyLoadingObserver.displayName = 'LazyLoadingObserver'

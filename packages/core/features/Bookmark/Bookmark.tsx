@@ -64,6 +64,4 @@ export const Mock = () => {
 }
 Bookmark.Mock = Mock
 
-if (__DEV__) {
-  Mock.displayName = 'Bookmark.Mock'
-}
+Mock.displayName = 'Bookmark.Mock'

@@ -39,6 +39,4 @@ const Mock = () => (
 )
 DownloadButton.Mock = Mock
 
-if (__DEV__) {
-  Mock.displayName = 'DownloadButton.Mock'
-}
+Mock.displayName = 'DownloadButton.Mock'

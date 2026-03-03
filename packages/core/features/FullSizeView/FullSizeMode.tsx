@@ -46,7 +46,5 @@ const FullSizeOff = ({ children }: Props) => (
 )
 FullSizeMode.Off = FullSizeOff
 
-if (__DEV__) {
-  FullSizeValue.displayName = 'FullSizeValue'
-  FullSizeUpdate.displayName = 'FullSizeUpdate'
-}
+FullSizeValue.displayName = 'FullSizeValue'
+FullSizeUpdate.displayName = 'FullSizeUpdate'

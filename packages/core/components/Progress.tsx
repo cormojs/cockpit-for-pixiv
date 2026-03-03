@@ -61,8 +61,6 @@ const Circle = styled.circle(
   `
 )
 
-if (__DEV__) {
-  Root.displayName = 'Progress.Root'
-  Svg.displayName = 'Progress.Svg'
-  Circle.displayName = 'Progress.Circle'
-}
+Root.displayName = 'Progress.Root'
+Svg.displayName = 'Progress.Svg'
+Circle.displayName = 'Progress.Circle'

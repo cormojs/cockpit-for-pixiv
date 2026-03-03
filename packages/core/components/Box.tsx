@@ -9,8 +9,6 @@ export const Flex = styled.div<BoxProps>(extend({ display: 'flex' }), sx)
 
 export const Grid = styled.div<BoxProps>(extend({ display: 'grid' }), sx)
 
-if (__DEV__) {
-  Box.displayName = 'Box'
-  Flex.displayName = 'Flex'
-  Grid.displayName = 'Grid'
-}
+Box.displayName = 'Box'
+Flex.displayName = 'Flex'
+Grid.displayName = 'Grid'

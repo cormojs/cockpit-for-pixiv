@@ -121,10 +121,10 @@ export const Router = ({ children }: Props) => {
       target.style.cursor = 'zoom-in'
     }
 
-    document.body.addEventListener('click', handleClick)
+    document.body.addEventListener('click', handleClick, true)
     document.body.addEventListener('mouseover', handleMouseOver)
     return () => {
-      document.body.removeEventListener('click', handleClick)
+      document.body.removeEventListener('click', handleClick, true)
       document.body.removeEventListener('mouseover', handleMouseOver)
     }
   }, [actions])
@@ -155,7 +155,5 @@ export const Router = ({ children }: Props) => {
   )
 }
 
-if (__DEV__) {
-  RouterValue.displayName = 'RouterValue'
-  RouterActions.displayName = 'RouterActions'
-}
+RouterValue.displayName = 'RouterValue'
+RouterActions.displayName = 'RouterActions'

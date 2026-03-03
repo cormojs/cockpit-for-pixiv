@@ -20,6 +20,4 @@ export const Divider = styled.hr<DividerProps>(
   sx
 )
 
-if (__DEV__) {
-  Divider.displayName = 'Divider'
-}
+Divider.displayName = 'Divider'

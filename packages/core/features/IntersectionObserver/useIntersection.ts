@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import { unstable_batchedUpdates as batchedUpdates } from 'react-dom'
 
 export interface Observer {
   start: (options?: IntersectionObserverInit) => () => void
@@ -14,14 +13,12 @@ const createObserver = (): Observer => {
   let instance: IntersectionObserver | null
   const start = (options: IntersectionObserverInit = {}) => {
     instance = new IntersectionObserver(entries => {
-      batchedUpdates(() => {
-        for (const entry of entries) {
-          const callback = callbacks.get(entry.target)
-          if (callback) {
-            callback(entry)
-          }
+      for (const entry of entries) {
+        const callback = callbacks.get(entry.target)
+        if (callback) {
+          callback(entry)
         }
-      })
+      }
     }, options)
     for (const [node] of callbacks) {
       instance.observe(node)

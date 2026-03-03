@@ -80,9 +80,7 @@ const Footer = styled.footer<SxProps>(
 )
 Dialog.Footer = Footer
 
-if (__DEV__) {
-  Dialog.displayName = 'Dialog'
-  Header.displayName = 'Dialog.Header'
-  Content.displayName = 'Dialog.Content'
-  Footer.displayName = 'Dialog.Footer'
-}
+Dialog.displayName = 'Dialog'
+Header.displayName = 'Dialog.Header'
+Content.displayName = 'Dialog.Content'
+Footer.displayName = 'Dialog.Footer'

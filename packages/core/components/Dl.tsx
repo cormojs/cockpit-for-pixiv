@@ -51,8 +51,6 @@ Dd.defaultProps = {
 }
 Dl.Dd = Dd
 
-if (__DEV__) {
-  Dl.displayName = 'Dl'
-  Dt.displayName = 'Dl.Header'
-  Dd.displayName = 'Dl.Content'
-}
+Dl.displayName = 'Dl'
+Dt.displayName = 'Dl.Header'
+Dd.displayName = 'Dl.Content'

@@ -192,9 +192,7 @@ const SpyItemLast = () => {
 }
 ScrollSpy.SpyItemLast = SpyItemLast
 
-if (__DEV__) {
-  ScrollSpyValue.displayName = 'ScrollSpyValue'
-  ScrollSpyActions.displayName = 'ScrollSpyActions'
-  SpyItem.displayName = 'ScrollSpy.SpyItem'
-  SpyItemLast.displayName = 'ScrollSpy.SpyItemLast'
-}
+ScrollSpyValue.displayName = 'ScrollSpyValue'
+ScrollSpyActions.displayName = 'ScrollSpyActions'
+SpyItem.displayName = 'ScrollSpy.SpyItem'
+SpyItemLast.displayName = 'ScrollSpy.SpyItemLast'

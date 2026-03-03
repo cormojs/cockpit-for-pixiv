@@ -14,6 +14,16 @@
 | `packages/addon-download` | ダウンロード機能を追加するアドオン UserScript |
 | `packages/site` | GitHub Pages 用のドキュメントサイト（Pug テンプレート） |
 
+### ビルド設定
+
+```
+vite.config.core.ts    # Core パッケージ用 Vite 設定（IIFE 形式で docs/ に出力）
+vite.config.addon.ts   # アドオン用 Vite 設定（IIFE 形式で docs/ に出力）
+build/
+├── banner-plugin.ts   # UserScript バナー挿入用 Vite プラグイン
+└── build-site.js      # ドキュメントサイトビルドスクリプト
+```
+
 ### Core パッケージの構造
 
 ```
@@ -51,10 +61,10 @@ packages/core/
 ## Tech Stack
 
 - **言語**: TypeScript (strict mode)、JSX
-- **UI**: React 16 + styled-components 5
+- **UI**: React 18 + styled-components 5
 - **スタイル**: `@styled-system/css` によるテーマベーススタイリング
 - **HTTP**: ky（fetch ラッパー）
-- **ビルド**: Webpack 4 + Babel（TypeScript は Babel でトランスパイル、tsc は型チェックのみ）
+- **ビルド**: Vite 6 + `@vitejs/plugin-react`（TypeScript は Vite/Babel でトランスパイル、tsc は型チェックのみ）
 - **出力**: `docs/*.user.js`（UserScript 形式）
 - **対象ブラウザ**: 最新 2 バージョンの Chrome
 
@@ -72,11 +82,16 @@ packages/core/
 # 依存インストール
 yarn install
 
-# 開発ビルド（ウォッチモード）
+# 開発ビルド（ウォッチモード、core + addon 並列）
 npm start
 
-# プロダクションビルド
+# プロダクションビルド（core + addon + site）
 npm run build
+
+# 個別ビルド
+npm run build:core    # vite build --config vite.config.core.ts
+npm run build:addon   # vite build --config vite.config.addon.ts
+npm run build:site    # node build/build-site.js
 
 # 型チェック + Lint
 npm run prebuild
