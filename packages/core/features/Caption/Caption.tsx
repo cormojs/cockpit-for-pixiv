@@ -110,12 +110,10 @@ const TitleLink = styled(Link)(
   })
 )
 
-if (__DEV__) {
-  Loader.displayName = 'Caption.Loader'
-  Loading.displayName = 'Caption.Loading'
-  Success.displayName = 'Caption.Success'
-  Failure.displayName = 'Caption.Failure'
-  Root.displayName = 'Caption.Root'
-  ActionBox.displayName = 'Caption.ActionBox'
-  TitleLink.displayName = 'Caption.TitleLink'
-}
+Loader.displayName = 'Caption.Loader'
+Loading.displayName = 'Caption.Loading'
+Success.displayName = 'Caption.Success'
+Failure.displayName = 'Caption.Failure'
+Root.displayName = 'Caption.Root'
+ActionBox.displayName = 'Caption.ActionBox'
+TitleLink.displayName = 'Caption.TitleLink'

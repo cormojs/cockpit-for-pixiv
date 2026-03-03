@@ -78,12 +78,10 @@ export const HTMLText = ({ sx, children, ...props }: HTMLTextProps) => (
   />
 )
 
-if (__DEV__) {
-  Text.displayName = 'Text'
-  Link.displayName = 'Link'
-  Heading.displayName = 'Heading'
-  Paragraph.displayName = 'Paragraph'
-}
+Text.displayName = 'Text'
+Link.displayName = 'Link'
+Heading.displayName = 'Heading'
+Paragraph.displayName = 'Paragraph'
 
 const ANKER_TAG = /<a href=".+?"/
 

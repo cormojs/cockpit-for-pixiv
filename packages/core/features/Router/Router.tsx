@@ -155,7 +155,5 @@ export const Router = ({ children }: Props) => {
   )
 }
 
-if (__DEV__) {
-  RouterValue.displayName = 'RouterValue'
-  RouterActions.displayName = 'RouterActions'
-}
+RouterValue.displayName = 'RouterValue'
+RouterActions.displayName = 'RouterActions'

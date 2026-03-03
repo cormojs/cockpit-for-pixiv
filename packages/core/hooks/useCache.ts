@@ -1,6 +1,5 @@
 import { LRUMap } from 'lru_map'
 import { useEffect } from 'react'
-import { unstable_batchedUpdates as batchedUpdates } from 'react-dom'
 import { useForceUpdate } from './useForceUpdate'
 
 const Pending = 0
@@ -86,11 +85,9 @@ export const createCache = <I extends string | number, V>(
     updaters.delete(update)
   }
   const emit = (input: I) => {
-    batchedUpdates(() => {
-      for (const [update, inputs] of updaters) {
-        if (inputs.has(input)) update()
-      }
-    })
+    for (const [update, inputs] of updaters) {
+      if (inputs.has(input)) update()
+    }
   }
   const preload = (input: I) => {
     accessResult(cache, fetch, input)

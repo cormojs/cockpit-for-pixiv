@@ -212,14 +212,12 @@ const Chip = styled.span(
 const getChipText = ({ pageCount, illustType }: Pixiv.SimpleIllust) =>
   pageCount !== 1 ? pageCount : illustType === 2 ? 'U' : null
 
-if (__DEV__) {
-  IllustLoader.displayName = 'RelatedWorks.IllustLoader'
-  Loader.displayName = 'RelatedWorks.Loader'
-  Success.displayName = 'RelatedWorks.Success'
-  Failure.displayName = 'RelatedWorks.Failure'
-  ScrollView.displayName = 'RelatedWorks.ScrollView'
-  ThumbnailList.displayName = 'RelatedWorks.ThumbnailList'
-  ThumbnailButton.displayName = 'RelatedWorks.ThumbnailButton'
-  Thumbnail.displayName = 'RelatedWorks.Thumbnail'
-  Chip.displayName = 'RelatedWorks.Chip'
-}
+IllustLoader.displayName = 'RelatedWorks.IllustLoader'
+Loader.displayName = 'RelatedWorks.Loader'
+Success.displayName = 'RelatedWorks.Success'
+Failure.displayName = 'RelatedWorks.Failure'
+ScrollView.displayName = 'RelatedWorks.ScrollView'
+ThumbnailList.displayName = 'RelatedWorks.ThumbnailList'
+ThumbnailButton.displayName = 'RelatedWorks.ThumbnailButton'
+Thumbnail.displayName = 'RelatedWorks.Thumbnail'
+Chip.displayName = 'RelatedWorks.Chip'

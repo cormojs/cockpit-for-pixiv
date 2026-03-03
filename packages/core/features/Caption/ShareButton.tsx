@@ -44,6 +44,4 @@ const createTwitterUrl = ({ title, userName, id }: Pixiv.Illust) => {
   return url.href
 }
 
-if (__DEV__) {
-  Mock.displayName = 'ShareButton.Mock'
-}
+Mock.displayName = 'ShareButton.Mock'

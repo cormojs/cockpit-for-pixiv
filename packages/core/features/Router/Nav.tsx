@@ -66,6 +66,4 @@ const Circle = styled.div(
   })
 )
 
-if (__DEV__) {
-  Circle.displayName = 'Nav.Circle'
-}
+Circle.displayName = 'Nav.Circle'

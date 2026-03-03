@@ -234,10 +234,8 @@ const validate = (comment: string, tags: string[]) => {
   return true
 }
 
-if (__DEV__) {
-  Loader.displayName = 'BookmarkDialog.Loader'
-  Loading.displayName = 'BookmarkDialog.Loading'
-  Failure.displayName = 'BookmarkDialog.Failure'
-  Success.displayName = 'BookmarkDialog.Success'
-  Form.displayName = 'BookmarkDialog.Form'
-}
+Loader.displayName = 'BookmarkDialog.Loader'
+Loading.displayName = 'BookmarkDialog.Loading'
+Failure.displayName = 'BookmarkDialog.Failure'
+Success.displayName = 'BookmarkDialog.Success'
+Form.displayName = 'BookmarkDialog.Form'

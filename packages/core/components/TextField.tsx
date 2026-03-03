@@ -218,12 +218,10 @@ Message.defaultProps = {
   variant: 'caption',
 }
 
-if (__DEV__) {
-  TextField.displayName = 'TextField'
-  Root.displayName = 'TextField.Root'
-  Container.displayName = 'TextField.Container'
-  Input.displayName = 'TextField.Input'
-  Label.displayName = 'TextField.Label'
-  Line.displayName = 'TextField.Line'
-  Message.displayName = 'TextField.Message'
-}
+TextField.displayName = 'TextField'
+Root.displayName = 'TextField.Root'
+Container.displayName = 'TextField.Container'
+Input.displayName = 'TextField.Input'
+Label.displayName = 'TextField.Label'
+Line.displayName = 'TextField.Line'
+Message.displayName = 'TextField.Message'

@@ -38,8 +38,6 @@ const Canvas = styled.canvas(
   })
 )
 
-if (__DEV__) {
-  Loader.displayName = 'FullSizeUgoira.Loader'
-  Success.displayName = 'FullSizeUgoira.Success'
-  Canvas.displayName = 'FullSizeUgoira.Canvas'
-}
+Loader.displayName = 'FullSizeUgoira.Loader'
+Success.displayName = 'FullSizeUgoira.Success'
+Canvas.displayName = 'FullSizeUgoira.Canvas'

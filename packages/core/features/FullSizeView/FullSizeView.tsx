@@ -105,10 +105,8 @@ const ClickableBox = styled.div(
   })
 )
 
-if (__DEV__) {
-  Loader.displayName = 'FullSizeView.Loader'
-  Success.displayName = 'FullSizeView.Success'
-  Root.displayName = 'FullSizeView.Root'
-  AdjustBox.displayName = 'FullSizeView.AdjustBox'
-  ClickableBox.displayName = 'FullSizeView.ClickableBox'
-}
+Loader.displayName = 'FullSizeView.Loader'
+Success.displayName = 'FullSizeView.Success'
+Root.displayName = 'FullSizeView.Root'
+AdjustBox.displayName = 'FullSizeView.AdjustBox'
+ClickableBox.displayName = 'FullSizeView.ClickableBox'

@@ -20,6 +20,4 @@ export const Badge = styled.div<BadgeProps>(
   sx
 )
 
-if (__DEV__) {
-  Badge.displayName = 'Badge'
-}
+Badge.displayName = 'Badge'

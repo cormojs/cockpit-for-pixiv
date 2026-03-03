@@ -31,6 +31,4 @@ export const About = ({ children }: Props) => {
   )
 }
 
-if (__DEV__) {
-  AboutUpdate.displayName = 'AboutUpdate'
-}
+AboutUpdate.displayName = 'AboutUpdate'

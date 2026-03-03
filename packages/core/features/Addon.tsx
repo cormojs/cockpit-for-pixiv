@@ -18,6 +18,4 @@ export const AddonProvider = ({ children, value }: Props) => (
   <Addon.Provider value={value}>{children}</Addon.Provider>
 )
 
-if (__DEV__) {
-  Addon.displayName = 'Addon'
-}
+Addon.displayName = 'Addon'

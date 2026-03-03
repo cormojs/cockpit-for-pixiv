@@ -196,11 +196,9 @@ const FollowButton = ({ disabled, followed, onClick }: FollowButtonProps) => {
   )
 }
 
-if (__DEV__) {
-  IllustLoader.displayName = 'User.IllustLoader'
-  Loader.displayName = 'User.Loader'
-  Failure.displayName = 'User.Failure'
-  Success.displayName = 'User.Success'
-  NameLink.displayName = 'User.NameLink'
-  FollowButton.displayName = 'Caption.FollowButton'
-}
+IllustLoader.displayName = 'User.IllustLoader'
+Loader.displayName = 'User.Loader'
+Failure.displayName = 'User.Failure'
+Success.displayName = 'User.Success'
+NameLink.displayName = 'User.NameLink'
+FollowButton.displayName = 'Caption.FollowButton'

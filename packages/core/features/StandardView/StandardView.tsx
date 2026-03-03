@@ -184,13 +184,11 @@ const Circle = styled.div(
   })
 )
 
-if (__DEV__) {
-  Loader.displayName = 'StandardView.Loader'
-  Loading.displayName = 'StandardView.Loading'
-  Success.displayName = 'StandardView.Success'
-  Failure.displayName = 'StandardView.Failure'
-  Root.displayName = 'StandardView.Root'
-  ImageBox.displayName = 'StandardView.ImageBox'
-  Action.displayName = 'StandardView.Action'
-  Circle.displayName = 'StandardView.Circle'
-}
+Loader.displayName = 'StandardView.Loader'
+Loading.displayName = 'StandardView.Loading'
+Success.displayName = 'StandardView.Success'
+Failure.displayName = 'StandardView.Failure'
+Root.displayName = 'StandardView.Root'
+ImageBox.displayName = 'StandardView.ImageBox'
+Action.displayName = 'StandardView.Action'
+Circle.displayName = 'StandardView.Circle'

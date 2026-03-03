@@ -115,7 +115,5 @@ Link.defaultProps = {
 
 Button.Link = Link
 
-if (__DEV__) {
-  Button.displayName = 'Button'
-  Link.displayName = 'Button.Link'
-}
+Button.displayName = 'Button'
+Link.displayName = 'Button.Link'

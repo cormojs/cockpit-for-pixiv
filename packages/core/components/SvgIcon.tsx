@@ -30,12 +30,7 @@ export const createIcon = (path: JSX.Element, displayName: string) => {
   ))
   const Component = memo(Icon)
 
-  if (__DEV__) {
-    Component.displayName = `${displayName}Icon`
-  }
+Component.displayName = `${displayName}Icon`
   return Component
 }
-
-if (__DEV__) {
-  SvgIcon.displayName = 'SvgIcon'
-}
+SvgIcon.displayName = 'SvgIcon'

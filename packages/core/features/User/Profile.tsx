@@ -150,9 +150,7 @@ const DetailListItem = ({ privacyLevel, label, name }: DetailListItemProps) =>
     </Dl>
   ) : null
 
-if (__DEV__) {
-  LinkContainer.displayName = 'Profile.LinkContainer'
-  IconLink.displayName = 'Profile.IconLink'
-  DetailList.displayName = 'Profile.DetailList'
-  DetailListItem.displayName = 'Profile.DetailListItem'
-}
+LinkContainer.displayName = 'Profile.LinkContainer'
+IconLink.displayName = 'Profile.IconLink'
+DetailList.displayName = 'Profile.DetailList'
+DetailListItem.displayName = 'Profile.DetailListItem'

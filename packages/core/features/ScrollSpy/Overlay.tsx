@@ -76,9 +76,7 @@ const Next = styled.button(
   })
 )
 
-if (__DEV__) {
-  Root.displayName = 'Overlay.Root'
-  BadgeContainer.displayName = 'Overlay.BadgeContainer'
-  Prev.displayName = 'Overlay.Prev'
-  Next.displayName = 'Overlay.Next'
-}
+Root.displayName = 'Overlay.Root'
+BadgeContainer.displayName = 'Overlay.BadgeContainer'
+Prev.displayName = 'Overlay.Prev'
+Next.displayName = 'Overlay.Next'

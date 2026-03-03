@@ -48,6 +48,4 @@ const Mock = ({ sx }: SxProps) => (
 )
 LikeButton.Mock = Mock
 
-if (__DEV__) {
-  Mock.displayName = 'LikeButton.Mock'
-}
+Mock.displayName = 'LikeButton.Mock'

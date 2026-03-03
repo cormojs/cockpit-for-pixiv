@@ -129,8 +129,6 @@ const ScrollView = styled.div(
   })
 )
 
-if (__DEV__) {
-  Dialog.displayName = 'Modal.Root'
-  Backdrop.displayName = 'Modal.Backdrop'
-  ScrollView.displayName = 'Modal.ScrollView'
-}
+Dialog.displayName = 'Modal.Root'
+Backdrop.displayName = 'Modal.Backdrop'
+ScrollView.displayName = 'Modal.ScrollView'

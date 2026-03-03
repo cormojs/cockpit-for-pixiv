@@ -5,6 +5,4 @@ export interface ImgProps extends SxProps {}
 
 export const Img = styled.img<ImgProps>(extend(), sx)
 
-if (__DEV__) {
-  Img.displayName = 'Img'
-}
+Img.displayName = 'Img'
